@@ -1,0 +1,10 @@
+
+/* Print styles — A4 */
+@media print {
+  body { font-size: 12pt; }
+  .navbar, .btn, .no-print { display: none !important; }
+  .container, .container-fluid { max-width: 100%; }
+  .print-container { margin: 0; padding: 0.5in; }
+  h1, h2, h3 { page-break-after: avoid; }
+  table { page-break-inside: avoid; }
+}

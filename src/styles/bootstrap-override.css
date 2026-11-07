@@ -1,0 +1,37 @@
+
+/* Bootstrap override: match original's fonts and base styles */
+:root {
+  --bs-font-sans-serif: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 0.9375rem;
+  --bs-body-line-height: 1.5;
+  --bs-border-color: #dee2e6;
+}
+
+/* Visual parity: match original CSS (pagination, chart items, drag handle) */
+.chart-item {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+  padding: 8px;
+  cursor: grab;
+}
+.chart-item:active {
+  cursor: grabbing;
+}
+.drag-handle {
+  cursor: grab;
+}
+
+/* Original pagination look: black buttons */
+.page-link {
+  color: #000;
+  border: 1px solid #dee2e6;
+}
+.page-item.active .page-link {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.page-link:hover {
+  background-color: #e9ecef;
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test / Playwright reports
+test-results/
+playwright-report/
+
+# Test output logs & placeholders
+final-test-run.txt
+test-run-output.txt
+test-run2-output.txt
+nul
+
+# Conflict / patch residue
+*.orig
+*.rej
+
+# Original source (read-only reference, never committed)
+original-source/
